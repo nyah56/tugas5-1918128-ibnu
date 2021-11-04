@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="48sp"
+        android:layout_height="48sp"
+        android:layout_above="@+id/TextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:src="@drawable/ic_baseline_access_alarm_24" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Alarm Set"
+        android:textSize="30sp"
+        android:layout_above="@+id/button_time_picker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"/>
+
+    <Button
+        android:id="@+id/button_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#4CAF50"
+        android:text="Set Alarm"
+        app:icon="@drawable/ic_baseline_add_circle_24" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_time_picker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#C30000"
+        android:text="Cancel Alarm"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_baseline_cancel_24" />
+</RelativeLayout>
